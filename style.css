@@ -1,9 +1,14 @@
 body {
-    background-color: black;
     color: white;
     font-family: "monospace";
     padding: 50px;
+    background: url("images/hellopham-bg.png");
 }
+
+.hyper {
+    color: aqua;
+}
+
 
 .title {
     text-align: left;
@@ -11,6 +16,18 @@ body {
 
 .others {
     text-align: left;
+}
+
+.intro {
+    margin-bottom: 50px;
+}
+
+.links {
+    margin-top: 50px;
+}
+
+.edu {
+
 }
 
 .foot1 {
