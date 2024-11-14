@@ -6,21 +6,9 @@ body {
 }
 
 .hyper {
-    color: aqua;
+    color: #dcd6f7; /* Light color to match the purple glow */
 }
 
-
-.title {
-    text-align: left;
-}
-
-.others {
-    text-align: left;
-}
-
-.intro {
-    margin-bottom: 50px;
-}
 
 .links {
     margin-top: 50px;
@@ -38,3 +26,41 @@ padding: 50px;
     right: 0;
     text-align: right;
 }
+
+
+  /* General styles for the glassy boxes */
+  .intro-box,
+  .links-box {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    box-shadow: 0 4px 20px 6px rgba(128, 0, 128, 0.4); /* Adjusted purple glow */
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+    color: white; /* Text color for contrast */
+  }
+  
+  
+  /* Specific styles for the intro box */
+  .intro-box {
+    border-left: 4px solid rgba(147, 112, 219, 0.2); /* Optional colored border */
+  }
+  
+  /* Specific styles for the links box */
+  .links-box {
+    border-left: 4px solid rgba(138, 43, 226, 0.2); /* Optional colored border */
+  }
+  
+  /* Hyperlink styles */
+  .links-box a {
+    color: #dcd6f7; /* Light color to match the purple glow */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .links-box a:hover {
+    text-decoration: underline;
+  }
+  
