@@ -1,6 +1,6 @@
 body {
   color: white;
-  font-family: "monospace";
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 50px;
   background-image: url("images/corgi.png");
   background-size: cover;
@@ -10,6 +10,35 @@ body {
   margin: 0; /* Removes default body margin */
 }
 
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Styles for tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Keeps it from growing too large on big screens */
+  margin: 0 auto; /* Centers the content */
+}
+
+.column {
+  width: 48%; /* Two-column layout on larger screens */
+}
 
 
 .hyper {
@@ -18,12 +47,12 @@ body {
 
 
 .links {
-  margin-top: 50px;
+  margin-top: 1%;
 }
 
 
 .foot1 {
-  padding: 50px;
+  padding: 1%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -67,3 +96,24 @@ body {
 .links-box a:hover {
   text-decoration: underline;
 }
+
+.button-link {
+  display: inline-block;         /* Makes the link behave like a button */
+  padding: 10px 20px;            /* Adds padding for button size */
+  margin: 1%;
+  background: rgba(77, 6, 113, 0.5); /* Semi-transparent white */
+  background-position: center;
+  color: white;                  /* Button text color */
+  text-align: center;            /* Centers text within the button */
+  text-decoration: none;         /* Removes underline */
+  border-radius: 5px;            /* Rounded corners */
+  font-size: 16px;               /* Adjusts font size */
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.9); /* Adjusted purple glow */
+}
+
+/* Optional: Hover effect for interactivity */
+.button-link:hover {
+  background-color: #ac741251;     /* Darkens background on hover */
+}
+
