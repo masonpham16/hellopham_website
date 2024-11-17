@@ -6,7 +6,7 @@ body {
   margin: 0;
   background-color: black; /* Black background */
   background-image: url("images/corgi.png");
-  background-size: contain; /* Ensures the image is fully visible, but might leave space */
+  background-size: 40%; /* Ensures the image is fully visible, but might leave space */
   background-position: right center; /* Position the image on the right side, vertically centered */
   background-repeat: no-repeat; /* Prevent image repetition */
   height: 100vh; /* Full viewport height */
@@ -23,7 +23,6 @@ body {
   height: 100%;
   z-index: 1; /* Snowflakes in the background */
   pointer-events: none; /* Prevent interaction with snowflakes */
-
 }
 
 .snowflake {
@@ -75,8 +74,8 @@ body {
 /* Intro box styling */
 .intro-box,
 .links-box {
-  padding: 20px;
-  margin: 50px auto; /* Ensure it has some space around */
+  padding: 10%;
+  margin: 10% auto; /* Ensure it has some space around */
   max-width: 500px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
@@ -91,7 +90,7 @@ body {
 /* Adjust margins for responsiveness */
 .intro-box h2,
 .intro-box p {
-  margin: 10px 0;
+  margin: 1% 0;
 }
 
 /* Example: Hyperlink styling within intro box */
@@ -105,39 +104,6 @@ body {
   text-decoration: underline;
 }
 
-/* Links box styling */
-.links-box {
-  margin-top: 30px;
-}
-
-.links-box a {
-  color: #dcd6f7; /* Light color for links */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.links-box a:hover {
-  text-decoration: underline;
-}
-
-/* Button Link styling */
-.button-link {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 1%;
-  background: rgba(77, 6, 113, 0.5); /* Semi-transparent background */
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  backdrop-filter: blur(5px); /* Frosted glass effect */
-  box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.9); /* Purple glow */
-}
-
-.button-link:hover {
-  background-color: #ac741251; /* Darkens background on hover */
-}
 
 /* Footer styling */
 footer {
@@ -167,7 +133,7 @@ footer {
     font-size: 14px;
   }
   .container {
-    padding: 10px;
+    padding: 10%;
   }
 }
 
@@ -176,6 +142,55 @@ footer {
     font-size: 16px;
   }
   .container {
-    padding: 20px;
+    padding: 10%;
   }
+}
+
+
+
+/* ---------------------Menu Bar--------------------- */
+/* Style for the menu bar */
+.menu-bar {
+  position: fixed; /* Sticks the menu bar to the top of the page */
+  top: 0; /* Aligns to the top */
+  left: 0; /* Ensures it spans from the left edge */
+  width: 100%; /* Full-width */
+  height: 50px; /* Fixed height for consistency across screens */
+  background-color: #121212; /* Dark background */
+  color: white; /* Text color */
+  z-index: 1000; /* Stays above other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  display: flex; /* Align content horizontally */
+  align-items: center; /* Vertically center items */
+  padding: 0 10px; /* Add horizontal padding */
+}
+
+/* Menu bar list items */
+.menu-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Align items horizontally */
+  justify-content: flex-end; /* Aligns menu items to the right */
+  width: 100%; /* Ensures proper spacing */
+}
+
+.menu-bar ul li {
+  position: relative; /* Required for dropdown positioning */
+  margin: 0;
+}
+
+/* Links in the menu bar */
+.menu-bar ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Link color */
+  padding: 10px 15px; /* Padding for clickable area */
+  display: block; /* Ensures clickable area includes the padding */
+  font-size: 14px; /* Optional: adjust font size */
+  line-height: 20px; /* Centers text inside the padding */
+}
+
+.menu-bar ul li a:hover {
+  background-color: #555; /* Highlight on hover */
+  border-radius: 4px; /* Rounded corners on hover */
 }
