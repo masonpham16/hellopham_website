@@ -6,22 +6,25 @@ body {
   margin: 0;
   background-color: black; /* Black background */
   background-image: url("images/corgi.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the background image covers the full viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
   height: 100vh; /* Full viewport height */
-  <!--overflow: hidden; /* Prevent scrolling */-->
-  position: relative; /* Needed for layering */
+  width: 100%; /* Ensure it covers the full width */
+  position: relative; /* For layering */
+  /* overflow: hidden; Prevent scrolling */
 }
 
 /* Snow effect - placed in the background */
 .snow {
-  position: absolute; /* Snow is absolutely positioned to cover the full screen */
+  position: fixed; /* Snow is absolutely positioned to cover the full screen */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1; /* Snowflakes in the background */
+  pointer-events: none; /* Prevent interaction with snowflakes */
+
 }
 
 .snowflake {
