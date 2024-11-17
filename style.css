@@ -6,13 +6,12 @@ body {
   margin: 0;
   background-color: black; /* Black background */
   background-image: url("images/corgi.png");
-  background-size: cover; /* Ensure the background image covers the full viewport */
-  background-position: center; /* Center the image */
+  background-size: contain; /* Ensures the image is fully visible, but might leave space */
+  background-position: right center; /* Position the image on the right side, vertically centered */
   background-repeat: no-repeat; /* Prevent image repetition */
   height: 100vh; /* Full viewport height */
   width: 100%; /* Ensure it covers the full width */
   position: relative; /* For layering */
-  /* overflow: hidden; Prevent scrolling */
 }
 
 /* Snow effect - placed in the background */
