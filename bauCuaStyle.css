@@ -14,33 +14,38 @@ body {
   }
   
   h1 {
-    color: #6d171b;
+    font-size: 80px;
+    color: #5d0b0f;
     text-shadow: 
       1px 1px 2px rgba(211, 131, 131, 0.8), /* Top-left highlight */
       -1px -1px 2px rgba(83, 4, 4, 0.2); /* Bottom-right inset shadow */
   }
   
   .dice {
-    margin: 20px 0;
+    margin: 2% 0;
   }
   
   .dice img {
     border-radius: 15%; /* Rounded corners */
     box-shadow: 5px 15px 19px rgba(0, 0, 0, 1.5); /* Box shadow */
     object-fit: cover; /* Ensures the image fits nicely */    width: 25%;
-    margin: 10px;
+    margin: 1%;
   }
   
   button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 36px;
+    font-weight: bold;
     cursor: pointer;
-    background-color: #58030600;
-    color: rgb(240, 248, 17);
+    background-color: #54010428;
     border: none;
     border-radius: 5px;
     animation-duration: 10s;
-    box-shadow: 0 0 20px rgba(227, 227, 168, 0.8); /* Glow effect */
+    box-shadow: 0 0 12px rgba(227, 227, 168, 0.871); /* Glow effect */
+    color: #53090d;
+    text-shadow: 
+      1px 1px 2px rgba(211, 131, 131, 0.8), /* Top-left highlight */
+      -1px -1px 2px rgba(83, 4, 4, 0.2); /* Bottom-right inset shadow */
   }
   
   #result {
