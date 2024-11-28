@@ -1,0 +1,47 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+    background-image: url(images/bauCuaImages/gamlingBG.webp);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #d0df63;
+  }
+  
+  .dice {
+    margin: 20px 0;
+  }
+  
+  .dice img {
+    width: 100px;
+    margin: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #197417;
+    color: rgb(245, 253, 0);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
