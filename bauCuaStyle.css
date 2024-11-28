@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f3f3f3;
-    background-image: url(images/bauCuaImages/gamlingBG.webp);
+    background-image: url(images/bauCuaImages/roosterWallpaper.webp);
     margin: 0;
     padding: 0;
   }
@@ -21,7 +21,9 @@ body {
   }
   
   .dice img {
-    width: 100px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 5px 15px 19px rgba(0, 0, 0, 1.5); /* Box shadow */
+    object-fit: cover; /* Ensures the image fits nicely */    width: 25%;
     margin: 10px;
   }
   
