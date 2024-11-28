@@ -25,7 +25,7 @@ body {
   }
   
   .dice img {
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 15%; /* Rounded corners */
     box-shadow: 5px 15px 19px rgba(0, 0, 0, 1.5); /* Box shadow */
     object-fit: cover; /* Ensures the image fits nicely */    width: 25%;
     margin: 10px;
@@ -35,15 +35,12 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #580306;
+    background-color: #58030600;
     color: rgb(240, 248, 17);
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 5px 9px rgba(0, 0, 0, 1.5); /* Box shadow */
-  }
-  
-  button:hover {
-    background-color: #4e031b;
+    animation-duration: 10s;
+    box-shadow: 0 0 20px rgba(227, 227, 168, 0.8); /* Glow effect */
   }
   
   #result {
