@@ -6,6 +6,7 @@ body {
     background-image: url(images/bauCuaImages/roosterWallpaper.webp);
     margin: 0;
     padding: 0;
+
   }
   
   .container {
@@ -13,7 +14,10 @@ body {
   }
   
   h1 {
-    color: #d0df63;
+    color: #6d171b;
+    text-shadow: 
+      1px 1px 2px rgba(211, 131, 131, 0.8), /* Top-left highlight */
+      -1px -1px 2px rgba(83, 4, 4, 0.2); /* Bottom-right inset shadow */
   }
   
   .dice {
@@ -31,19 +35,20 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #197417;
-    color: rgb(245, 253, 0);
+    background-color: #580306;
+    color: rgb(240, 248, 17);
     border: none;
     border-radius: 5px;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 1.5); /* Box shadow */
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #4e031b;
   }
   
   #result {
     margin-top: 20px;
     font-size: 20px;
-    color: #333;
+    color: #690404;
   }
   
