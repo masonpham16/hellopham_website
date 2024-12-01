@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingredient and Player Manager</title>
+  <link rel="stylesheet" href="cheffy.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left section for players -->
+    <div class="left-section">
+      <h2>Players</h2>
+      <div class="input-container">
+        <input type="text" id="playerInput" placeholder="Enter a player name">
+        <button id="addPlayerButton">Add Player</button>
+      </div>
+      <ul id="playerList"></ul>
+    </div>
+
+    <!-- Right section for ingredients -->
+    <div class="right-section">
+      <h2>Ingredients</h2>
+      <div class="input-container">
+        <input type="text" id="ingredientInput" placeholder="Enter an ingredient">
+        <button id="addIngredientButton">Add Ingredient</button>
+      </div>
+      <ul id="ingredientList"></ul>
+    </div>
+  </div>
+
+  <!-- Random ingredient assignment button -->
+  <div class="random-container">
+    <button id="assignButton">Assign Random Ingredients</button>
+  </div>
+
+  <script src="cheffy.js"></script>
+</body>
+</html>

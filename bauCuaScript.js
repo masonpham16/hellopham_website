@@ -6,6 +6,7 @@ function rollDice() {
   const button = document.getElementById("rollButton");
   const dice1Element = document.getElementById("dice1");
   const dice2Element = document.getElementById("dice2");
+  const dice3Element = document.getElementById("dice3");
   const result = document.getElementById("result");
   const totalRolls = 15; // Number of times dice faces will change during the animation
   let rollCount = 0;
@@ -22,10 +23,12 @@ function rollDice() {
     // Random temporary values for animation
     const tempDice1 = Math.floor(Math.random() * 6) + 1;
     const tempDice2 = Math.floor(Math.random() * 6) + 1;
+    const tempDice3 = Math.floor(Math.random() * 6) + 1;
 
     // Update dice images during rolling
     dice1Element.src = `images/bauCuaImages/dice${tempDice1}.png`;
     dice2Element.src = `images/bauCuaImages/dice${tempDice2}.png`;
+    dice3Element.src = `images/bauCuaImages/dice${tempDice3}.png`;
 
     rollCount++;
     if (rollCount >= totalRolls) {
@@ -39,10 +42,12 @@ function finalizeRoll(button, result) {
   // Final dice values
   const dice1 = Math.floor(Math.random() * 6) + 1;
   const dice2 = Math.floor(Math.random() * 6) + 1;
+  const dice3 = Math.floor(Math.random() * 6) + 1;
 
   // Update dice images with final values
   document.getElementById("dice1").src = `images/bauCuaImages/dice${dice1}.png`;
   document.getElementById("dice2").src = `images/bauCuaImages/dice${dice2}.png`;
+  document.getElementById("dice3").src = `images/bauCuaImages/dice${dice3}.png`;
 
 
   // Re-enable the button
