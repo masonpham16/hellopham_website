@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffe6f0;
+    color: #ff007f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #yesButton {
+    background-color: #ff007f;
+    color: white;
+  }
+  
+  #yesButton:hover {
+    background-color: #ff3399;
+  }
+  
+  #noButton {
+    background-color: #ffffff;
+    color: #ff007f;
+    border: 2px solid #ff007f;
+  }
+  
+  #noButton:hover {
+    background-color: #ffe6f0;
+  }
+  
+  .face {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #ffcccb;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .eye {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  .left-eye {
+    left: 30px;
+    top: 35px;
+  }
+  
+  .right-eye {
+    right: 30px;
+    top: 35px;
+  }
+  
+  .pupil {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(10px, 10px);
+    transition: transform 0.1s ease;
+  }
+  
+  .mouth {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 0 0 30px 30px;
+    bottom: 20px;
+  }
+  
