@@ -4,7 +4,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 0;
   margin: 0;
-  background: radial-gradient(circle at top left, rgba(255, 20, 147, 0.3), black 70%);
+  background: radial-gradient(circle at top left, rgba(58, 5, 33, 0.783), black 70%);
   background-position: right center; /* Position the image on the right side, vertically centered */
   background-repeat: no-repeat; /* Prevent image repetition */
   height: 100%; /* Full viewport height */
@@ -155,7 +155,7 @@ footer {
   left: 0; /* Ensures it spans from the left edge */
   width: 100%; /* Full-width */
   height: 50px; /* Fixed height for consistency across screens */
-  background-color: #121212; /* Dark background */
+  background-color: #121212b8; /* Dark background */
   color: white; /* Text color */
   z-index: 1000; /* Stays above other elements */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
