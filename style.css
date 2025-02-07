@@ -1,15 +1,13 @@
 /* General body styles */
 body {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 0;
   margin: 0;
-  background-color: black; /* Black background */
-  background-image: url("images/corgi.png");
-  background-size: 40%; /* Ensures the image is fully visible, but might leave space */
+  background: radial-gradient(circle at top left, rgba(255, 20, 147, 0.3), black 70%);
   background-position: right center; /* Position the image on the right side, vertically centered */
   background-repeat: no-repeat; /* Prevent image repetition */
-  height: 100vh; /* Full viewport height */
+  height: 100%; /* Full viewport height */
   width: 100%; /* Ensure it covers the full width */
   position: relative; /* For layering */
 }
@@ -78,7 +76,7 @@ body {
   margin: 10% auto; /* Ensure it has some space around */
   max-width: 500px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.019); /* Semi-transparent white */
   box-shadow: 0 4px 20px rgba(128, 0, 128, 0.6); /* Stronger purple glow */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   border: 1px solid rgba(255, 255, 255, 0.4); /* Light border for contrast */
@@ -112,6 +110,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  color: #dcd6f7;
   text-align: right;
   z-index: 3; /* Ensures the footer is above everything else */
 }
