@@ -1,107 +1,103 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
 /* General body styles */
 body {
   color: rgb(0, 0, 0);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Poppins", "Quicksand", sans-serif;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   background: radial-gradient(circle at top left, rgba(58, 5, 33, 0.783), black 70%);
-  background-position: right center; /* Position the image on the right side, vertically centered */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  height: 100%; /* Full viewport height */
-  width: 100%; /* Ensure it covers the full width */
-  position: relative; /* For layering */
+  position: relative;
+  background-size: cover; /* Ensure the background covers the whole page */
+  background-attachment: fixed; /* Keeps the background fixed as you scroll */
 }
 
 /* Snow effect - placed in the background */
 .snow {
-  position: fixed; /* Snow is absolutely positioned to cover the full screen */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Snowflakes in the background */
-  pointer-events: none; /* Prevent interaction with snowflakes */
+  z-index: 1;
+  pointer-events: none;
 }
 
-.snowflake {
+.drop {
   position: absolute;
-  top: -10px;
-  background-color: #fff;
+  background-color: rgba(216, 216, 229, 0.5); /* Semi-transparent blue for drops */
   border-radius: 50%;
-  opacity: 0.8;
-  pointer-events: none;
-  animation: fall 5s infinite linear;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Soft white glow */
-  filter: blur(2px); /* Slight blur for the glow */
+  animation: fall 5s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* swerving effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  filter: blur(1px);
 }
 
 @keyframes fall {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-  100% {
-    transform: translateY(100vh) scale(1.5);
-  }
+  0% { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
 }
 
-/* Snowflake variations */
-.snowflake:nth-child(1) {
-  left: 10%;
-  width: 10px;
-  height: 10px;
-  animation-duration: 4s;
-  animation-delay: 0s;
+/* Shower Drop variations (slower speeds for each) */
+.drop:nth-child(1) { 
+  left: 10%; 
+  width: 6px; 
+  height: 12px; 
+  animation-duration: 6s; /* Slower falling speed */
 }
 
-.snowflake:nth-child(2) {
-  left: 20%;
-  width: 8px;
-  height: 8px;
-  animation-duration: 6s;
-  animation-delay: 2s;
+.drop:nth-child(2) { 
+  left: 20%; 
+  width: 5px; 
+  height: 10px; 
+  animation-duration: 2s; /* Slower falling speed */
 }
 
-.snowflake:nth-child(3) {
-  left: 30%;
-  width: 12px;
-  height: 12px;
-  animation-duration: 5s;
-  animation-delay: 1s;
+.drop:nth-child(3) { 
+  left: 30%; 
+  width: 7px; 
+  height: 14px; 
+  animation-duration: 3s; /* Slower falling speed */
 }
 
-/* Intro box styling */
+/* Intro box styling (Updated for left alignment) */
 .intro-box,
 .links-box {
-  padding: 10%;
-  margin: 10% auto; /* Ensure it has some space around */
+  padding: 5%;
+  margin: 5% auto; /* Adjusted for spacing */
   max-width: 500px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.019); /* Semi-transparent white */
-  box-shadow: 0 4px 20px rgba(128, 0, 128, 0.6); /* Stronger purple glow */
-  backdrop-filter: blur(10px); /* Frosted glass effect */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* Light border for contrast */
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4); /* Softer pink glow */
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(255, 182, 193, 0.4);
   color: white;
-  z-index: 2; /* Both boxes on the same layer */
-  position: relative; /* Ensure it’s above the background but below the footer */
+  z-index: 2;
+  position: relative; /* Changed from absolute to relative */
+  text-align: left;
+  width: 100%; /* Ensure the box doesn't exceed the page width */
+  max-width: 500px; /* Maintain the max width */
+  margin-left: 5%; /* Adds space from the left side */
 }
 
 /* Adjust margins for responsiveness */
 .intro-box h2,
 .intro-box p {
-  margin: 1% 0;
+  margin: 5% 0;
+  font-weight: 600; /* Slightly bolder */
 }
 
-/* Example: Hyperlink styling within intro box */
+/* Styled hyperlinks */
 .intro-box a {
-  color: #dcd6f7; /* Light color for links */
+  color: #ff87b1;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .intro-box a:hover {
   text-decoration: underline;
 }
-
 
 /* Footer styling */
 footer {
@@ -110,86 +106,80 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #dcd6f7;
+  color: #ff87b1;
   text-align: right;
-  z-index: 3; /* Ensures the footer is above everything else */
+  z-index: 3;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 100%);
+  backdrop-filter: blur(5px); /* Slight blur to enhance readability */
+  padding: 10px 20px;
 }
 
 /* General layout */
 .container {
   width: 100%;
-  max-width: 1200px; /* Keeps it from growing too large on big screens */
-  margin: 0 auto; /* Centers the content */
-}
-
-.column {
-  width: 48%; /* Two-column layout on larger screens */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  .container {
-    padding: 10%;
-  }
+  body { font-size: 14px; }
+  .container { padding: 10%; }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-  .container {
-    padding: 10%;
-  }
+  body { font-size: 16px; }
+  .container { padding: 10%; }
 }
 
-
-
-/* ---------------------Menu Bar--------------------- */
-/* Style for the menu bar */
-.menu-bar {
-  position: fixed; /* Sticks the menu bar to the top of the page */
-  top: 0; /* Aligns to the top */
-  left: 0; /* Ensures it spans from the left edge */
-  width: 100%; /* Full-width */
-  height: 50px; /* Fixed height for consistency across screens */
-  background-color: #121212b8; /* Dark background */
-  color: white; /* Text color */
-  z-index: 1000; /* Stays above other elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
-  display: flex; /* Align content horizontally */
-  align-items: center; /* Vertically center items */
-  padding: 0 10px; /* Add horizontal padding */
+/* --------------------- Navigation Bar --------------------- */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 100%);
+  backdrop-filter: blur(5px); /* Slight blur for better readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu bar list items */
-.menu-bar ul {
+/* Ensuring the nav items remain readable */
+.nav-bar ul {
   margin: 0;
   padding: 0;
-  list-style: none; /* Removes bullet points */
-  display: flex; /* Align items horizontally */
-  justify-content: flex-end; /* Aligns menu items to the right */
-  width: 100%; /* Ensures proper spacing */
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
-.menu-bar ul li {
-  position: relative; /* Required for dropdown positioning */
-  margin: 0;
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
-/* Links in the menu bar */
-.menu-bar ul li a {
-  text-decoration: none; /* Remove underline from links */
-  color: white; /* Link color */
-  padding: 10px 15px; /* Padding for clickable area */
-  display: block; /* Ensures clickable area includes the padding */
-  font-size: 14px; /* Optional: adjust font size */
-  line-height: 20px; /* Centers text inside the padding */
+/* Glow effect on hover */
+.nav-bar ul li a:hover {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 1), 
+               0 0 18px rgba(255, 255, 255, 0.8), 
+               0 0 25px rgba(255, 255, 255, 0.6);
 }
 
-.menu-bar ul li a:hover {
-  background-color: #555; /* Highlight on hover */
-  border-radius: 4px; /* Rounded corners on hover */
+/* Different glow effect for the active page */
+.nav-bar ul li a.active {
+  color: #ff00ff; /* Change the text color to a bright neon pink (or any color you like) */
+  text-shadow: 0 0 15px rgba(255, 0, 255, 1), 
+               0 0 25px rgba(255, 0, 255, 0.8), 
+               0 0 35px rgba(255, 0, 255, 0.6);
 }

@@ -7,6 +7,29 @@
       "If you find me at the bar, I’ll be the one starting conversations and making sure everyone’s having a good time.",
       "And if you bring up tech, gaming, or anything nerdy, prepare for a deep dive.",
       "Outside of work, I’m either in the gym or in the kitchen, experimenting with new recipes."
+    ],
+    "workExperience": [
+      {
+        "company": "Prospect Waterproofing Company",
+        "location": "Sterling, VA",
+        "positions": [
+          {
+            "title": "CAD Drafter / Project Manager",
+            "duration": "February 2017 - Present",
+            "achievements": [
+              "Orchestrated complex initiatives from project inception to completion, ensuring quality execution within scope, budget, and schedule for $4 million projects.",
+              "Developed comprehensive project plans, managed risks, and allocated resources to meet or exceed project benchmarks of $20,000,000 worth of projects.",
+              "Led and empowered teams of 6-12 members, prioritizing communication and collaboration to achieve high-quality performance.",
+              "Mastered Agile project management tools, streamlining workflows and reducing labor costs by 10%.",
+              "Outperformed financial targets by a 10% margin and mitigated a potential $200,000 cost increase.",
+              "Translated design concepts into precise technical drawings and detailed plans, ensuring accuracy and compliance.",
+              "Managed all Autodesk licenses for the drafting department, eliminating workflow redundancies.",
+              "Increased team productivity by 300% by implementing the latest CAD technologies and techniques.",
+              "Collaborated closely with project managers to integrate waterproofing elements seamlessly into designs."
+            ]
+          }
+        ]
+      }
     ]
   }
   
