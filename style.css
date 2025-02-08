@@ -12,7 +12,6 @@ body {
   position: relative;
   background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
 }
 
 /* Snow effect */
@@ -48,7 +47,7 @@ body {
 /* Intro and links box styling */
 .intro-box,
 .links-box {
-  padding: 5%;
+  padding: 10px 5%; /* 10px top and bottom padding, 5% left and right padding */
   margin: 5% auto;
   max-width: 500px;
   border-radius: 12px;
