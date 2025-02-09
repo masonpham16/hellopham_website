@@ -60,7 +60,6 @@ body {
   position: relative;
   text-align: left;
   width: 100%;
-  max-width: 500px;
   margin-left: 5%;
 }
 
@@ -78,21 +77,6 @@ body {
 
 .intro-box a:hover {
   text-decoration: underline;
-}
-
-/* Footer styling */
-footer {
-  padding: 1%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #87d3ff;
-  text-align: right;
-  z-index: 3;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 100%);
-  backdrop-filter: blur(5px);
-  padding: 1px 20px;
 }
 
 /* General layout */
@@ -160,4 +144,42 @@ footer {
   text-shadow: 0 0 15px rgb(0, 81, 255), 
                0 0 25px rgba(17, 0, 255, 0.8), 
                0 0 35px rgba(0, 8, 255, 0.6);
+}
+
+/* Social Buttons Styling */
+.social-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.social-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px rgba(131, 219, 236, 0.8);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+/* Individual Button Colors */
+.email { background-color: #ffffff; }  /* Gmail Red */
+.github { background-color: #f7f1f1; }  /* GitHub Black */
+.linkedin { background-color: #edf1f4; }  /* LinkedIn Blue */
+
+/* Hover Effects */
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(131, 219, 236, 0.8), 
+              0 0 30px rgba(131, 219, 236, 0.8), 
+              0 0 45px rgba(131, 219, 236, 0.8);
 }
