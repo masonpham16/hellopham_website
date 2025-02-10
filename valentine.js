@@ -1,46 +1,25 @@
-const noButton = document.getElementById('noButton');
-const container = document.querySelector('.container');
-const eyes = document.querySelectorAll('.eye');
-const pupils = document.querySelectorAll('.pupil');
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.innerHTML = '❤️';
+  document.body.appendChild(heart);
 
-// Function to move the "No" button to a random position
-const moveButton = () => {
-  const containerRect = container.getBoundingClientRect();
-  const buttonWidth = noButton.offsetWidth;
-  const buttonHeight = noButton.offsetHeight;
+  // Random position within viewport width
+  heart.style.left = Math.random() * 90 + "vw"; // Prevent overflow on edges
+  heart.style.top = "100vh"; // Starting from the bottom
 
-  const randomX = Math.random() * (containerRect.width - buttonWidth);
-  const randomY = Math.random() * (containerRect.height - buttonHeight);
+  // Random font size for the heart
+  heart.style.fontSize = Math.random() * 20 + 10 + "px";
 
-  noButton.style.position = 'absolute';
-  noButton.style.left = `${randomX}px`;
-  noButton.style.top = `${randomY}px`;
-};
+  // Random animation duration for variety
+  const duration = Math.random() * 2 + 3;
+  heart.style.animationDuration = duration + "s";
 
-// Add event listener to move the button when the mouse gets close
-noButton.addEventListener('mouseover', moveButton);
+  // Remove after animation ends
+  setTimeout(() => {
+    heart.remove();
+  }, duration * 1000);
+}
 
-// Function to make the pupils follow the mouse
-const followMouse = (event) => {
-  const containerRect = container.getBoundingClientRect();
-  const mouseX = event.clientX - containerRect.left;
-  const mouseY = event.clientY - containerRect.top;
-
-  eyes.forEach((eye, index) => {
-    const rect = eye.getBoundingClientRect();
-    const eyeCenterX = rect.left + rect.width / 2;
-    const eyeCenterY = rect.top + rect.height / 2;
-
-    const angle = Math.atan2(mouseY - eyeCenterY, mouseX - eyeCenterX);
-    const pupil = pupils[index];
-
-    const maxDistance = 8; // Limit the distance the pupil can move
-    const x = Math.cos(angle) * maxDistance;
-    const y = Math.sin(angle) * maxDistance;
-
-    pupil.style.transform = `translate(${10 + x}px, ${10 + y}px)`;
-  });
-};
-
-// Add event listener to track mouse movement
-document.addEventListener('mousemove', followMouse);
+// Generate hearts at intervals
+setInterval(createHeart, 500);

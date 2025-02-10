@@ -9,14 +9,9 @@
 <body>
   <div class="container">
     <h1>Will you be my Valentine? 💕</h1>
-    <div class="face">
-      <div class="eye left-eye">
-        <div class="pupil"></div>
-      </div>
-      <div class="eye right-eye">
-        <div class="pupil"></div>
-      </div>
-      <div class="mouth"></div>
+    <!-- Images added here -->
+    <div class="images">
+      <img src="images/ValentineImages/MeandMichelle.png" alt="Image 1">
     </div>
     <div class="buttons">
       <button id="yesButton">Yes 💖</button>
@@ -24,6 +19,14 @@
     </div>
   </div>
 
+  <div class="heart-container"></div>
+
   <script src="valentine.js"></script>
+  <script>
+    // Add event listener for the "Yes" button
+    document.getElementById("yesButton").addEventListener("click", function() {
+      window.location.href = "valentineYes.html"; // Redirect to the "Yes" page
+    });
+  </script>
 </body>
 </html>
