@@ -1,40 +1,7 @@
-// Function to move the "No" button to a random position when the mouse gets close
-const noButton = document.getElementById('noButton');
-const yesButton = document.getElementById('yesButton');
-
-// Function to move the "No" button away from the mouse
-const moveButton = (event) => {
-  const buttonWidth = noButton.offsetWidth;
-  const buttonHeight = noButton.offsetHeight;
-
-  // Get mouse position relative to the viewport
-  const mouseX = event.clientX;
-  const mouseY = event.clientY;
-
-  // Calculate the distance between mouse and button
-  const distanceX = mouseX - (noButton.offsetLeft + buttonWidth / 2);
-  const distanceY = mouseY - (noButton.offsetTop + buttonHeight / 2);
-  const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
-
-  // If the mouse is within 100px, move the button to a random location on the page
-  if (distance < 100) {
-    const randomX = Math.random() * (window.innerWidth - buttonWidth);
-    const randomY = Math.random() * (window.innerHeight - buttonHeight);
-
-    noButton.style.position = 'absolute';
-    noButton.style.left = `${randomX}px`;
-    noButton.style.top = `${randomY}px`;
-  }
-};
-
-// Add event listener for mouse movement to move the "No" button
-document.addEventListener('mousemove', moveButton);
-
-// Create floating hearts animation
+// Ensure floating hearts always appear
 function createHearts() {
   const numberOfHearts = 5; // Number of hearts to create at a time
 
-  // Create hearts at intervals
   setInterval(() => {
     for (let i = 0; i < numberOfHearts; i++) {
       const heart = document.createElement('div');
@@ -59,10 +26,48 @@ function createHearts() {
   }, 500); // Create hearts every 500ms
 }
 
-// Ensure hearts are created when the page loads
+// Start hearts animation immediately
 createHearts();
 
-// Add event listener for the "Yes" button to redirect to valentineYes.html
-yesButton.addEventListener('click', () => {
-  window.location.href = 'valentineYes.html'; // Redirect to valentineYes.html
-});
+// Check if buttons exist before adding event listeners
+const noButton = document.getElementById('noButton');
+const yesButton = document.getElementById('yesButton');
+
+if (noButton) {
+  const moveButton = () => {
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+
+    const randomX = Math.random() * (window.innerWidth - buttonWidth);
+    const randomY = Math.random() * (window.innerHeight - buttonHeight);
+
+    noButton.style.position = 'absolute';
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
+  };
+
+  const handleMouseMove = (event) => {
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    const distanceX = mouseX - (noButton.offsetLeft + buttonWidth / 2);
+    const distanceY = mouseY - (noButton.offsetTop + buttonHeight / 2);
+    const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+    if (distance < 100) {
+      moveButton();
+    }
+  };
+
+  document.addEventListener('mousemove', handleMouseMove);
+  noButton.addEventListener('touchstart', moveButton);
+}
+
+if (yesButton) {
+  yesButton.addEventListener('click', () => {
+    window.location.href = 'valentineYes.html';
+  });
+}
