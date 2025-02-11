@@ -224,3 +224,10 @@ body {
   display: block;
   margin: 0 auto 10px;
 }
+
+#projects-container {
+  padding-left: 5%;
+  display: flex;
+  gap: 3%;
+}
+
