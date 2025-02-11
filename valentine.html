@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Be My Valentine</title>
   <link rel="stylesheet" href="valentine.css">
 </head>
+
 <body>
+
+  <!-- Floating hearts container -->
+  <div class="heart-container"></div>
+
+  <!-- Static heart for initial display -->
+  <div class="heart">❤️</div>
+
+  <!-- Main container for content -->
   <div class="container">
     <h1>Will you be my Valentine? 💕</h1>
-    <!-- Images added here -->
+
+    <!-- Images section (can be expanded for more images) -->
     <div class="images">
-      <img src="images/ValentineImages/MeandMichelle.png" alt="Image 1">
+      <img src="images/ValentineImages/MeandMichelle.png" alt="Me and Michelle">
     </div>
+
+    <!-- Buttons for user interaction -->
     <div class="buttons">
       <button id="yesButton">Yes 💖</button>
       <button id="noButton">No 😢</button>
     </div>
   </div>
 
-  <div class="heart-container"></div>
-
+  <!-- External JS script to handle interactions -->
   <script src="valentine.js"></script>
-  <script>
-    // Add event listener for the "Yes" button
-    document.getElementById("yesButton").addEventListener("click", function() {
-      window.location.href = "valentineYes.html"; // Redirect to the "Yes" page
-    });
-  </script>
+
 </body>
+
 </html>

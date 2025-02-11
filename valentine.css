@@ -1,4 +1,4 @@
-/* Body styling for the main page */
+/* Body styling */
 body {
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -9,83 +9,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewport='0 0 64 64'><text y='50%' font-size='36'>💃</text></svg>") 16 16, auto;
-}
-
-/* Pregnant emoji cursor for the "Yes" page */
-body.yes-page {
-  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><text y='50%' font-size='36'>🤰</text></svg>") 16 16, auto;
-}
-
-/* Additional styles for other elements */
-.container {
-  max-width: 600px;
+  overflow: hidden; /* Prevents scrolling issues */
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  cursor: url('images/ValentineImages/heart_mouse.png'), auto; /* Replace with your image file path */
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 2px solid #ff007f;
-  display: inline-block;
-  background-color: white;
-  border-radius: 8px;
-}
 
-.images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.images img {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-button {
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#yesButton {
-  background-color: #ff007f;
-  color: white;
-}
-
-#yesButton:hover {
-  background-color: #ff3399;
-}
-
-#noButton {
-  background-color: #ffffff;
-  color: #ff007f;
-  border: 2px solid #ff007f;
-}
-
-#noButton:hover {
-  background-color: #ffe6f0;
-}
-
+/* Heart animation */
 .heart {
   position: absolute;
   color: #ff007f;
@@ -104,4 +34,54 @@ button {
     transform: translateY(-100vh);
     opacity: 0;
   }
+}
+
+/* Heart container */
+.heart-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Buttons */
+button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yesButton {
+  background-color: #ff007f;
+  color: white;
+}
+
+#yesButton:hover {
+  background-color: #ff3399;
+}
+
+#noButton {
+  background-color: #ffe6f0;
+  color: #ff007f;
+  border: 2px solid #ff007f;
+}
+
+#noButton:hover {
+  background-color: #ffe6f0;
+}
+
+.container {
+  padding-top: 100px;  /* Adds space above the container, pushing it down */
+}
+
+img {
+  width: 500px;
+  height: auto;
+  display: block;  /* Makes sure the image is treated as a block-level element */
+  margin: 0 auto;  /* Centers the image */
 }
