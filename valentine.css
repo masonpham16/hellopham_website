@@ -85,12 +85,6 @@ img {
   display: block;
   margin: 0 auto;
   
-  /* Ensures nearest-neighbor scaling for pixelated effect */
+  /* keep pixel art original pixels */
   image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-
-  /* Prevents smoothing */
-  -ms-interpolation-mode: nearest-neighbor;
 }
