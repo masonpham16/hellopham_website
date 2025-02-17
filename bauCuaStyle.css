@@ -2,8 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f3f3f3;
-    background-image: url(images/bauCuaImages/roosterWallpaper.webp);
+    background-color: #b4615e;
+    /* background-image: url(images/bauCuaImages/roosterWallpaper.webp); */
     margin: 0;
     padding: 0;
 
@@ -26,10 +26,11 @@ body {
   }
   
   .dice img {
-    border-radius: 15%; /* Rounded corners */
-    box-shadow: 5px 15px 19px rgba(0, 0, 0, 1.5); /* Box shadow */
     object-fit: cover; /* Ensures the image fits nicely */    width: 25%;
     margin: 1%;
+    width: 128px;  /* Adjust to the size you want */
+    height: 128px; /* Adjust to the size you want */
+    image-rendering: pixelated;
   }
   
   button {

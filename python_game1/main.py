@@ -18,6 +18,10 @@ CHOICES = ["Rock", "Paper", "Scissors"]
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Rock Paper Scissors")
 
+# Load background image
+background = pygame.image.load("python_game1/RPS-images/RPS-background.png")  # Change to your image path
+background = pygame.transform.scale(background, (WIDTH, HEIGHT))
+
 # Button class
 class Button:
     def __init__(self, x, y, text):
@@ -46,7 +50,7 @@ computer_choice = ""
 result = ""
 
 while running:
-    screen.fill(WHITE)
+    screen.blit(background, (0, 0))  # Draw background image
     
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
