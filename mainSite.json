@@ -1,35 +1,48 @@
 {
-    "greeting": "Hello!",
-    "bio": [
-      "I'm Mason Pham.",
-      "I know I might look serious all the time, but honestly, I’m just a chill guy who loves good food, great conversations, and a solid gym session.",
-      "At work, I thrive in a team—I keep an open mind, love brainstorming ideas, and enjoy making things happen with a great group of people.",
-      "If you find me at the bar, I’ll be the one starting conversations and making sure everyone’s having a good time.",
-      "And if you bring up tech, gaming, or anything nerdy, prepare for a deep dive.",
-      "Outside of work, I’m either in the gym or in the kitchen, experimenting with new recipes."
-    ],
-    "workExperience": [
-      {
-        "company": "Prospect Waterproofing Company",
-        "location": "Sterling, VA",
-        "positions": [
-          {
-            "title": "CAD Drafter / Project Manager",
-            "duration": "February 2017 - Present",
-            "achievements": [
-              "Orchestrated complex initiatives from project inception to completion, ensuring quality execution within scope, budget, and schedule for $4 million projects.",
-              "Developed comprehensive project plans, managed risks, and allocated resources to meet or exceed project benchmarks of $20,000,000 worth of projects.",
-              "Led and empowered teams of 6-12 members, prioritizing communication and collaboration to achieve high-quality performance.",
-              "Mastered Agile project management tools, streamlining workflows and reducing labor costs by 10%.",
-              "Outperformed financial targets by a 10% margin and mitigated a potential $200,000 cost increase.",
-              "Translated design concepts into precise technical drawings and detailed plans, ensuring accuracy and compliance.",
-              "Managed all Autodesk licenses for the drafting department, eliminating workflow redundancies.",
-              "Increased team productivity by 300% by implementing the latest CAD technologies and techniques.",
-              "Collaborated closely with project managers to integrate waterproofing elements seamlessly into designs."
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "greeting": "Hi, I’m Mason Pham.",
+  "bio": [
+    "As a project manager in the construction industry, I’ve honed my ability to manage complex projects, coordinate with diverse teams, and deliver results under pressure.",
+    "My career has spanned multiple industries—from hairstyling to real estate—giving me a versatile skill set and a deep appreciation for creativity, structure, and client satisfaction.",
+    "With an associate degree in architecture and soon completing my associate degree in computer science, I’m excited to merge my technical knowledge with my hands-on experience as I pursue my bachelor’s degree in computer science at George Mason University this fall.",
+    "I’ve built web applications using JavaScript, CSS, HTML, and Python, completed the 100 Days of Code course for Python, and have a strong preference for Java as my primary programming language, along with experience in SQL.",
+    "My passion for technology, problem-solving, and continuous learning drives me to take on new challenges and contribute meaningfully to every project I’m involved in."
+  ],
+  "workExperience": [
+    {
+      "company": "Prospect Waterproofing Company",
+      "location": "Sterling, VA",
+      "positions": [
+        {
+          "title": "CAD Drafter / Project Manager",
+          "duration": "February 2017 - Present",
+          "achievements": [
+            "Managed $20M+ in projects from inception to completion, ensuring on-time, on-budget delivery.",
+            "Led cross-functional teams of 6-12 members, enhancing collaboration and performance.",
+            "Optimized workflows using Agile tools, reducing labor costs by 10%.",
+            "Exceeded financial targets by 10% while mitigating $200K in potential cost overruns.",
+            "Produced precise technical drawings using CAD, ensuring design accuracy and compliance.",
+            "Managed Autodesk licenses, improving drafting efficiency and eliminating redundancies.",
+            "Boosted team productivity by 300% through CAD technology enhancements."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "George Mason University",
+      "years": "Expected: Fall 2025-Expected: Spring 2027",
+      "degree": "B.S. Computer Science"
+    },
+    {
+      "institution": "Northern Virginia Community College",
+      "years": "2024-Expected: Spring 2025",
+      "degree": "A.S. Computer Science"
+    },
+    {
+      "institution": "Udemy",
+      "years": "2023",
+      "course": "100 Days of Code (Python)"
+    }
+  ]
+}

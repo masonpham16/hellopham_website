@@ -229,5 +229,6 @@ body {
   padding-left: 5%;
   display: flex;
   gap: 3%;
+  image-rendering: pixelated;
 }
 
