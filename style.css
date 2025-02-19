@@ -61,8 +61,8 @@ input, textarea {
 .intro-box,
 .links-box {
   padding: 10px 5%; /* 10px top and bottom padding, 5% left and right padding */
-  margin: 5% auto 5% 5%;
-  max-width: 500px;
+  margin: 5% auto;
+  max-width: 80%;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 20px rgba(189, 182, 255, 0.4);
@@ -77,8 +77,7 @@ input, textarea {
 
 .intro-box h2,
 .intro-box p {
-  margin: 5% 0;
-  font-weight: 600;
+  font-size: 16px; /* Adjust text size for mobile */
 }
 
 .intro-box a {
@@ -110,7 +109,7 @@ input, textarea {
 
   /* Allow intro box to be more flexible */
   .intro-box {
-    max-width: 95%;
+    max-width: 90%;
   }
 }
 
@@ -171,6 +170,7 @@ input, textarea {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  z-index: 1000; /* Higher z-index to bring social buttons to the foreground */
 }
 
 .social-btn {
@@ -185,7 +185,6 @@ input, textarea {
   border-radius: 50%;
   box-shadow: 2px 2px 20px rgba(131, 219, 236, 0.8);
   transition: transform 0.2s, box-shadow 0.2s;
-
 }
 
 /* Individual Button Colors */
@@ -209,7 +208,7 @@ input, textarea {
 
 .projects-box {
   padding: 5% 5%; /* 10px top and bottom padding, 5% left and right padding */
-  margin: 5% auto;
+  margin: 5% auto 10%;
   max-width: 150px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
@@ -234,8 +233,8 @@ input, textarea {
 
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 90%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -245,7 +244,7 @@ input, textarea {
 #projects-container {
   padding-left: 5%;
   display: flex;
-  gap: 3%;
+  gap: 10%;
   image-rendering: pixelated;
 }
 
