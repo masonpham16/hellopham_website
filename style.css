@@ -61,7 +61,7 @@ input, textarea {
 .intro-box,
 .links-box {
   padding: 10px 5%; /* 10px top and bottom padding, 5% left and right padding */
-  margin: 10% auto;
+  margin: 20% auto;
   max-width: 50%;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
@@ -72,12 +72,12 @@ input, textarea {
   z-index: 2;
   position: relative;
   text-align: left;
-  width: 30%;
+  width: 50%;
 }
 
 .intro-box h2,
 .intro-box p {
-  font-size: 16px; /* Adjust text size for mobile */
+  font-size: 14px; /* Adjust text size for mobile */
 }
 
 .intro-box a {
@@ -93,11 +93,11 @@ input, textarea {
 /* General layout */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 80%) {
   body { font-size: 14px; }
   .container { padding: 10%; }
 
@@ -109,7 +109,9 @@ input, textarea {
 
   /* Allow intro box to be more flexible */
   .intro-box {
+    width: 80%;
     max-width: 90%;
+    margin: 10% auto;
   }
 }
 
