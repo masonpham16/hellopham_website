@@ -61,8 +61,8 @@ input, textarea {
 .intro-box,
 .links-box {
   padding: 10px 5%; /* 10px top and bottom padding, 5% left and right padding */
-  margin: 5% auto;
-  max-width: 80%;
+  margin: 10% auto;
+  max-width: 50%;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 20px rgba(189, 182, 255, 0.4);
@@ -72,7 +72,7 @@ input, textarea {
   z-index: 2;
   position: relative;
   text-align: left;
-  width: 100%;
+  width: 30%;
 }
 
 .intro-box h2,
@@ -208,8 +208,9 @@ input, textarea {
 
 .projects-box {
   padding: 5% 5%; /* 10px top and bottom padding, 5% left and right padding */
-  margin: 5% auto 10%;
+  margin: 5% auto;
   max-width: 150px;
+  height: 100%;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 20px rgba(189, 182, 255, 0.4);
@@ -238,13 +239,13 @@ input, textarea {
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 4px;
 }
 
 #projects-container {
   padding-left: 5%;
   display: flex;
-  gap: 10%;
+  gap: 2%;
   image-rendering: pixelated;
 }
 
