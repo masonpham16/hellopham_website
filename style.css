@@ -14,6 +14,19 @@ body {
   background-attachment: fixed;
 }
 
+/* Input and textarea styles for better mobile fit */
+input, textarea {
+  width: 100%;
+  max-width: 90vw; /* Prevents it from being too wide */
+  box-sizing: border-box; /* Ensures padding doesn't add extra width */
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid rgba(183, 182, 255, 0.4);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
 /* Snow effect */
 .snow {
   position: fixed;
@@ -48,7 +61,7 @@ body {
 .intro-box,
 .links-box {
   padding: 10px 5%; /* 10px top and bottom padding, 5% left and right padding */
-  margin: 5% auto;
+  margin: 5% auto 5% 5%;
   max-width: 500px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
@@ -60,7 +73,6 @@ body {
   position: relative;
   text-align: left;
   width: 100%;
-  margin-left: 5%;
 }
 
 .intro-box h2,
@@ -86,15 +98,20 @@ body {
   margin: 0 auto;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   body { font-size: 14px; }
   .container { padding: 10%; }
-}
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  body { font-size: 16px; }
-  .container { padding: 10%; }
+  /* Adjust text box sizes for mobile */
+  input, textarea {
+    font-size: 14px; /* Make text smaller for mobile */
+    padding: 8px; /* Reduce padding */
+  }
+
+  /* Allow intro box to be more flexible */
+  .intro-box {
+    max-width: 95%;
+  }
 }
 
 /* Navigation bar */
