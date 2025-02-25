@@ -219,6 +219,12 @@ input, textarea {
   border: 1.5px solid rgba(183, 182, 255, 0.4);
   color: rgb(255, 255, 255);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  object-fit: cover;
+  
 }
 
 .projects-link {
@@ -230,11 +236,17 @@ input, textarea {
   height: 100%;
 }
 
+.projects-box p {
+  color: red;
+  height: 5%;
+}
+
+
 .profile-pic {
-  max-width: 50%; /* Makes image responsive */
-  height: auto; /* Maintains aspect ratio */
-  max-height: 60%; /* Prevents oversized images */
+  width: 100%; /* Makes image responsive */
+  height: 100%; /* Prevents oversized images */
   object-fit: cover; /* Ensures images fill their container */
+  overflow: hidden;
 }
 
 
