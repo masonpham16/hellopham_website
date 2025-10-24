@@ -1,48 +1,6 @@
 {
-  "greeting": "Hi, I’m Mason Pham.",
+  "greeting": "Hi",
   "bio": [
-    "As a project manager in the construction industry, I’ve honed my ability to manage complex projects, coordinate with diverse teams, and deliver results under pressure.",
-    "My career has spanned multiple industries—from hairstyling to real estate—giving me a versatile skill set and a deep appreciation for creativity, structure, and client satisfaction.",
-    "With an associate degree in architecture and soon completing my associate degree in computer science, I’m excited to merge my technical knowledge with my hands-on experience as I pursue my bachelor’s degree in computer science at George Mason University this fall.",
-    "I’ve built web applications using JavaScript, CSS, HTML, and Python, completed the 100 Days of Code course for Python, and have a strong preference for Java as my primary programming language, along with experience in SQL.",
-    "My passion for technology, problem-solving, and continuous learning drives me to take on new challenges and contribute meaningfully to every project I’m involved in."
-  ],
-  "workExperience": [
-    {
-      "company": "Prospect Waterproofing Company",
-      "location": "Sterling, VA",
-      "positions": [
-        {
-          "title": "CAD Drafter / Project Manager",
-          "duration": "February 2017 - Present",
-          "achievements": [
-            "Managed $20M+ in projects from inception to completion, ensuring on-time, on-budget delivery.",
-            "Led cross-functional teams of 6-12 members, enhancing collaboration and performance.",
-            "Optimized workflows using Agile tools, reducing labor costs by 10%.",
-            "Exceeded financial targets by 10% while mitigating $200K in potential cost overruns.",
-            "Produced precise technical drawings using CAD, ensuring design accuracy and compliance.",
-            "Managed Autodesk licenses, improving drafting efficiency and eliminating redundancies.",
-            "Boosted team productivity by 300% through CAD technology enhancements."
-          ]
-        }
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "George Mason University",
-      "years": "Graduating in: Spring 2027",
-      "degree": "B.S. Computer Science"
-    },
-    {
-      "institution": "Northern Virginia Community College",
-      "years": "Class of: Spring 2025",
-      "degree": "A.S. Computer Science"
-    },
-    {
-      "institution": "Udemy",
-      "years": "2023",
-      "course": "100 Days of Code (Python)"
-    }
+    "Website going through some changes."
   ]
 }
